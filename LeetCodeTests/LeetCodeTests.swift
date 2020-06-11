@@ -11,24 +11,129 @@ import XCTest
 
 class LeetCodeTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testSums1() {
+        let sol = Solution1()
+        let sum = 9
+        let array = [2, 7, 11, 15]
+        let ret = sol.twoSum(array, sum)
+        
+        let idx1 = ret.first!
+        let idx2 = ret.last!
+        
+        XCTAssertEqual(ret.count, 2)
+        XCTAssertNotEqual(idx1, idx2)
+        XCTAssertEqual(array[idx1] + array[idx2], sum)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testSums2() {
+        let sol = Solution1()
+        let sum = 13
+        let array = [1, 11, 6, 7]
+        let ret = sol.twoSum(array, sum)
+        
+        let idx1 = ret.first!
+        let idx2 = ret.last!
+        
+        XCTAssertEqual(ret.count, 2)
+        XCTAssertNotEqual(idx1, idx2)
+        XCTAssertEqual(array[idx1] + array[idx2], sum)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testSums3() {
+        let sol = Solution1()
+        let sum = 6
+        let array = [3, 3]
+        let ret = sol.twoSum(array, sum)
+        
+        let idx1 = ret.first!
+        let idx2 = ret.last!
+        
+        XCTAssertEqual(ret.count, 2)
+        XCTAssertNotEqual(idx1, idx2)
+        XCTAssertEqual(array[idx1] + array[idx2], sum)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testSums4() {
+        let sol = Solution2()
+        let sum = 9
+        let array = [2, 7, 11, 15]
+        let ret = sol.twoSum(array, sum)
+        
+        let idx1 = ret.first!
+        let idx2 = ret.last!
+        
+        XCTAssertEqual(ret.count, 2)
+        XCTAssertNotEqual(idx1, idx2)
+        XCTAssertEqual(array[idx1] + array[idx2], sum)
     }
-
+    
+    func testSums5() {
+        let sol = Solution2()
+        let sum = 13
+        let array = [1, 11, 6, 7]
+        let ret = sol.twoSum(array, sum)
+        
+        let idx1 = ret.first!
+        let idx2 = ret.last!
+        
+        XCTAssertEqual(ret.count, 2)
+        XCTAssertNotEqual(idx1, idx2)
+        XCTAssertEqual(array[idx1] + array[idx2], sum)
+    }
+    
+    func testSums6() {
+        let sol = Solution2()
+        let sum = 6
+        let array = [3, 3]
+        let ret = sol.twoSum(array, sum)
+        
+        let idx1 = ret.first!
+        let idx2 = ret.last!
+        
+        XCTAssertEqual(ret.count, 2)
+        XCTAssertNotEqual(idx1, idx2)
+        XCTAssertEqual(array[idx1] + array[idx2], sum)
+    }
+    
+    func testSums7() {
+        let sol = Solution3()
+        let sum = 9
+        let array = [2, 7, 11, 15]
+        let ret = sol.twoSum(array, sum)
+        
+        let idx1 = ret.first!
+        let idx2 = ret.last!
+        
+        XCTAssertEqual(ret.count, 2)
+        XCTAssertNotEqual(idx1, idx2)
+        XCTAssertEqual(array[idx1] + array[idx2], sum)
+    }
+    
+    func testSums8() {
+        let sol = Solution3()
+        let sum = 13
+        let array = [1, 11, 6, 7]
+        let ret = sol.twoSum(array, sum)
+        
+        let idx1 = ret.first!
+        let idx2 = ret.last!
+        
+        XCTAssertEqual(ret.count, 2)
+        XCTAssertNotEqual(idx1, idx2)
+        XCTAssertEqual(array[idx1] + array[idx2], sum)
+    }
+    
+    func testSums9() {
+        let sol = Solution3()
+        let sum = 6
+        let array = [3, 3]
+        let ret = sol.twoSum(array, sum)
+        
+        let idx1 = ret.first!
+        let idx2 = ret.last!
+        
+        XCTAssertEqual(ret.count, 2)
+        XCTAssertNotEqual(idx1, idx2)
+        XCTAssertEqual(array[idx1] + array[idx2], sum)
+    }
 }
